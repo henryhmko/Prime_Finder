@@ -39,3 +39,12 @@ def is_prime(num):
             return False
         i += 1
     return True
+
+def factor_num(num):
+    all_factors = []
+    i = 1
+    while i != (num + 1):
+        if not(num % i):
+            all_factors.append(i)
+        i += 1
+    return all_factors
